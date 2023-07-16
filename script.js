@@ -26,7 +26,7 @@ function renderList(actionForButton) {
         </div>
       </div>
 
-      <button onclick="getMovieInDetail(${currentMovieStack[i].id})" style="height:40px;">Movie Details</button>
+      <button onclick="getMovieInDetail(${currentMovieStack[i].id})" class="movie-details-button">Movie Details</button>
 
       <button onclick="${actionForButton}(this)" class="add-to-favourite-button text-icon-button" data-id="${currentMovieStack[i].id}">
         <i class="fa-regular fa-heart"></i>
@@ -49,7 +49,7 @@ function printError(message) {
 }
 
 function getTrandingMovies() {
-    fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=cb213741fa9662c69add38c5a59c0110")
+    fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=1ad5a505bd9eabbe2abd4c6b2d8d6372")
         .then((response) => response.json())
         .then((data) => {
             currentMovieStack = data.results;
@@ -67,7 +67,7 @@ searchBox.addEventListener('keyup', () => {
 
     if (searchString.length > 0) {
         let searchStringURI = encodeURI(searchString);
-        fetch(`https://api.themoviedb.org/3/search/movie?api_key=cb213741fa9662c69add38c5a59c0110&language=en-US&page=1&include_adult=false&query=${searchStringURI}`)
+        fetch(`https://api.themoviedb.org/3/search/movie?api_key=1ad5a505bd9eabbe2abd4c6b2d8d6372&language=en-US&page=1&include_adult=false&query=${searchStringURI}`)
             .then((response) => response.json())
             .then((data) => {
                 currentMovieStack = data.results;
@@ -137,7 +137,7 @@ function renderMovieInDetail(movie) {
 }
 
 function getMovieInDetail(movieId) {
-    fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=cb213741fa9662c69add38c5a59c0110&language=en-US`)
+    fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=1ad5a505bd9eabbe2abd4c6b2d8d6372&language=en-US`)
         .then((response) => response.json())
         .then((data) => renderMovieInDetail(data))
         .catch((err) => printError(err));
