@@ -33,6 +33,8 @@ The IMDb clone project is built using HTML, CSS, and JavaScript. It utilizes the
 
 4. Favorites: Click on the "Add to Favorites" button on a movie card to add the movie to your favorites list. Click on the "Favorites" button in the navbar to view your favorite movies.
 
+5. This project is live on [https://khalidlad888.github.io/IMDb-clone/]
+
 
 
 ## Acknowledgments
