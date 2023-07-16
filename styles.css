@@ -1,0 +1,157 @@
+body {
+  background-color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  background-color: #fcfdff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:first-child {
+  margin-left: 0;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  width: 200px;
+  border-radius: 4px;
+}
+
+main {
+  padding: 1rem;
+  text-align: center;
+}
+
+#movie-card-container{
+  margin: 10px;
+  padding: 10px;
+  margin-left: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.movie-card {
+  display: inline-block;
+  width: 250px;
+  height: 475px;
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-poster {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.movie-title-container {
+  margin-bottom: 1rem;
+}
+
+.movie-title-container span {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-container img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.add-to-favourite-button {
+  width: 100px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.detail-movie-card {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.detail-movie-poster {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.detail-movie-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.detail-movie-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+.detail-movie-plot {
+  line-height: 1.6;
+}
+
+
+#movie-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
