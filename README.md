@@ -44,4 +44,4 @@ The IMDb clone project is built using HTML, CSS, and JavaScript. It utilizes the
 
 ---
 
-_This is an IMDb clone project created by [Khalid Lad](https://github.com/yourusername)._
+_This is an IMDb clone project created by [Khalid Lad](https://github.com/khalidlad888)._

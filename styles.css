@@ -76,6 +76,7 @@ main {
 }
 
 .movie-title-container {
+  color: whitesmoke;
   margin-bottom: 1rem;
 }
 
@@ -86,16 +87,13 @@ main {
 }
 
 .rating-container {
+  margin-top: 10px;
+  color: gold;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.rating-container img {
-  width: 20px;
-  height: 20px;
-  margin-right: 0.5rem;
-}
 
 .add-to-favourite-button {
   width: 100px;
@@ -144,12 +142,14 @@ main {
 }
 
 .detail-movie-title {
+  color: whitesmoke;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .detail-movie-rating {
+  color: gold;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
@@ -157,13 +157,13 @@ main {
 
 
 .detail-movie-plot {
+  color: whitesmoke;
   line-height: 1.6;
 }
 
 
 #movie-details-container {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
 }
